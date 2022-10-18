@@ -1,18 +1,23 @@
-var reverseString = function (str) {
-    let lenthStr = str.length -1 ;
-    var reverseStr= " ";
+console.warn("=============Reverse String Assignment=============== ");
 
-    for (let index = lenthStr; index >=0; index--) {
-        
-        console.log(str.charAt(index));
-
-        var char = str.charAt(index);
-
-        reverseStr = reverseStr + char;
+var str1 = "Hard work always pays back";
+var str2 = "Soon I will be Angular IT Champ";
+function reverse(str)
+{
+    var res ="";
+    for(index = str.length-1;index >=0;index--)
+    {
+        if(str.charAt(index) != " ")
+        {
+            res = res + str.charAt(index);
+        }
     }
-    console.log(`"${str} Given String Reversed: ${reverseStr}`);
-
-    
+    return res;
 }
-reverseString("Hard work always pays back")
-reverseString("Soon I will be IT Angular Champ")
+console.log(`Hard work always pays back : `,reverse(str1));
+console.log("Soon I will be Angular IT Champ" ,reverse(str2));
+
+
+
+
+
