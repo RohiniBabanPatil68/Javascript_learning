@@ -16,4 +16,7 @@ var square = 1;
 while (square >=5) {
     console.log(square);
     square = square*square;
+
 }
+console.warn("==================While do Assignment====================");
+
