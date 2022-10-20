@@ -9,21 +9,24 @@ street : "AS Club",
 state:"MH",
 City:"Pune"
 
-},
 
-eat:function(){
 
-    console.log(" I am vegetarian");
 },
 details: function(){
-console.log(`${this.fullName}, ${this.Age},`);
+    let personDetails = `Details are : ${this.fullName}, ${this.Age},${this.address.state}`
+return  personDetails;
+},
+walk:function (){console.log("I do Walk Everyday");}
 }
-}
+let pDetails = person.details();
+console.log(person.details());
 
 
 console.log(typeof person)
+console.warn("====================================================");
 
-person.eat();
+//person.eat();
+person.walk();
 console.error("============================================");
 person.details(); 
 
