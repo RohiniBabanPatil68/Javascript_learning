@@ -48,3 +48,8 @@ delete person.Age; // delete object
 
 
 console.log(person.City);
+let isAvailable = "fullName" in person ;
+console.log(isAvailable);
+console.log("city" in person);
+
+console.log("-------------------------------------------------------------------------------------------------------------");

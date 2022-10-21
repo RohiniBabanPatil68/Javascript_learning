@@ -24,7 +24,7 @@ return  teacherDetails;
 let tDetails = teacher.details();
 console.log(`Using Function & Concat :`, teacher.details());
 
-console.log("-------------------------------------------------------------------------------------------------------------");
+console.log("-------------------------------------------------------------------------------------------------------------")
 
 teacher.Degree =` Degree Of Teacher is : Computer science and Advance computing`
 console.log(teacher.Degree);
