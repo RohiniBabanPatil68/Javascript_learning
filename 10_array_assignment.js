@@ -1,15 +1,21 @@
-console.warn("=================Given Array===================");
+var arrayOfNames = ['Kamat','Memon','Naspati','Taimur','Menon','Kamat','Andy','Taimur'];
+console.log(`Original Array is : ${arrayOfNames }`);
+console.warn("********************************************************************************");
 
-arrayOfNames = [`Kamat`,`Memon`,`Nashpati`,`Taimur`,`Memon`,`Kamat`,`Andy`] ;
-console.log(arrayOfNames);
+var set = [...new Set(arrayOfNames)];
+console.log(`After Removing Duplicate elements: ${set}`);
+console.warn("********************************************************************************");
 
-console.warn("=================Remove Duplicate Elements===================");
+let arrayLength = arrayOfNames.length ;
+//console.log( arrayLength);
 
-arrayOfNames = arrayOfNames.filter(function(items,index,inputArray)  {
-    return inputArray.indexOf(items)== index;
-} );
-console.log(arrayOfNames);
+let setLength = set.length ;
+//console.log( setLength);
 
-console.warn("=================Unique Elements===================");
+console.log(`Count of duplicate elements removed from array is : ${arrayLength- setLength}`);
+console.warn("********************************************************************************");
+
+console.log(`Unique elements of array is: ${setLength }`);
+
 let arrayUniqueElements =[ ...new Set (arrayOfNames)];
 console.log(arrayUniqueElements);
