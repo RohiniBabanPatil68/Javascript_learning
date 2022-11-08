@@ -81,7 +81,6 @@ function fib(num){
     let num1 = 0;
     let num2 = 1;
     let i;
-
     if(num < 1)
     {
         return num;
@@ -94,6 +93,5 @@ function fib(num){
         num1 =num2;
         num2 = next;
     }
-
 }
 fib(15);
